@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "name": "bundlers",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node run.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

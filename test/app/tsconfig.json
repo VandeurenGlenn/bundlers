@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "nodenext",
+    "declarationDir": "./exports/rollup",
+    "declaration": true,
+    "emitDeclarationOnly": true
+  },
+  "include": ["./src/*"]
+}

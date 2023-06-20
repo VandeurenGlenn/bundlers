@@ -1,0 +1,37 @@
+{
+  "devDependencies": {
+    "@esbuild-plugins/node-resolve": "^0.2.2",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "esbuild": "^0.18.5",
+    "rollup": "^3.20.2",
+    "webpack": "^5.87.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@leofcoin/storage": "^3.3.2",
+    "@material/mwc-dialog": "^0.27.0",
+    "@material/mwc-fab": "^0.27.0",
+    "@material/mwc-list": "^0.27.0",
+    "@material/mwc-textfield": "^0.27.0",
+    "@vandeurenglenn/flex-elements": "^0.1.1",
+    "custom-pages": "^0.12.1",
+    "custom-svg-icon": "^1.0.1",
+    "custom-svg-iconset": "^1.0.1",
+    "lit": "^2.7.1",
+    "uuid": "^9.0.0"
+  },
+  "type": "module",
+  "name": "things",
+  "description": "Todo & reminders",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:rollup": "rollup -c",
+    "build:esbuild": "node esbuild.js && tsc",
+    "build:webpack": "npx webpack ./src/shell.ts ./src/views/todo.js ./node_modules/@leofcoin/storage/exports/browser-store.js -o exports/webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
